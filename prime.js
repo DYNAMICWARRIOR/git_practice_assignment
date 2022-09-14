@@ -1,8 +1,21 @@
 //create a prime number problem
-var i =1;
-var num = 13
-if(13%i==2){
-    console.log("yes")
-    }else{
-        console.log("no")
-    }
+let N=10;
+for(let i=1; i<=N; i++)
+{
+	let count=0;
+	for(let j=1; j<=i; j++)
+	{
+		if(i%j==0)
+		{
+			count++;
+		}
+	}
+}
+if(count==2)
+{
+	console.log(i, "is Prime");
+}
+else
+{
+	console.log(i, "is not Prime");
+}
